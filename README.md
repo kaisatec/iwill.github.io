@@ -1,7 +1,7 @@
 iwill.github.io
 ===============
 
-iwill.im
+[iwill.im](http://iwill.im/)
 
-Powered by Hexo <http://hexo.io/index.html>
+Powered by [Hexo](http://hexo.io/index.html)
 
