@@ -58,91 +58,11 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2014-04-20T04:35:58.000Z"><a href="/2014-04-20-blogging-with-hexo/">2014-04-20</a></time>
+        <time datetime="2014-04-19T16:48:06.000Z"><a href="/2014-04-20-hello-world.html">2014-04-20</a></time>
       
       
   
-    <h1 class="title"><a href="/2014-04-20-blogging-with-hexo/">使用 Hexo 搭建 GitHub Pages</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>2009 年 <a href="https://github.com/zigzag" target="_blank">Zigzag</a> 就教了我怎么用 <a href="https://help.github.com/categories/20/articles" target="_blank">GitHub Pages</a> 写博客，可是 …. 他去天堂写代码已经快满 4 年了，Zig 我对不起你！为了避免被我对不起的 Zig 带走，周末开始搭建自己的博客了。</p>
-<p>看到我订阅的博客多半用的是 <a href="http://octopress.org/" target="_blank">Octopress</a>，所以认定这一定是个高大上。但是被总是安装不成功，貌似是升级 XCode 5.1.1 导致一些东西编译不过，非 Ruby Fan 无法坚持了。最终我选了 <a href="http://hexo.io/" target="_blank">Hexo</a> [hekso]，<code>A fast, simple &amp; powerful blog framework, powered by Node.js</code>，与前者类似 —— 将 <a href="http://daringfireball.net/projects/markdown/" target="_blank">Markdown</a> 转成用于发布的 HTML。</p>
-<h3 id="安装_Homebrew">安装 Homebrew</h3>
-<p><a href="http://brew.sh/" target="_blank">Homebrew</a> － <code>The missing package manager for OS X</code>。感觉叫 <code>missing</code> 的都是极品，比如 <a href="http://macromates.com/" target="_blank">TextMate</a> － <code>The missing editor for Mac OS X</code>。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>ruby <span class="operator">-e</span> <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)</span>"</span>
-</pre></td></tr></table></figure>
-
-<h3 id="安装_Node-js_&amp;_NPM">安装 Node.js &amp; NPM</h3>
-<p><a href="http://nodejs.org/" target="_blank">Node.js</a> 是服务端的 Javascript，<a href="https://npmjs.org/" target="_blank">npm</a> 是前者的 Package Manager，会随 Node.js 一同安装。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>brew install node
-</pre></td></tr></table></figure>
-
-<h3 id="安装_Hexo">安装 Hexo</h3>
-<p>安装 <a href="http://hexo.io/" target="_blank">Hexo</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>npm install hexo -g
-</pre></td></tr></table></figure>
-
-<h3 id="运行_Hexo">运行 Hexo</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-2
-3
-4
-5
-6
-</pre></td><td class="code"><pre><span class="comment"># 创建 Workspace</span>
-hexo init iwill.im && <span class="built_in">cd</span> iwill.im
-<span class="comment"># 从 Markdown 生成静态文件，`hexo g`</span>
-hexo generate
-<span class="comment"># 启动本地 server，`hexo s`</span>
-hexo server
-</pre></td></tr></table></figure>
-
-<p>通过 <a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a> 访问本地 server 查看效果，而且修改 Markdown 后无需重新 hexo server。</p>
-<h3 id="安装_Theme">安装 Theme</h3>
-<p>Hexo 的 Theme 貌似不是很多，质量也一般，我用的是 <a href="http://hexo.io/hexo-theme-light/" target="_blank">Light</a>。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>git clone git://github.com/tommy351/hexo-theme-light.git themes/light
-</pre></td></tr></table></figure>
-
-<h3 id="配置_Hexo">配置 Hexo</h3>
-<p>_config.yml</p>
-<p>搭建好了 <a href="/">iwill.im</a>，</p>
-<p><a href="http://iwill.im/">http://iwill.im/</a><br><a href="https://help.github.com/categories/20/articles" target="_blank">https://help.github.com/categories/20/articles</a><br><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages" target="_blank">https://help.github.com/articles/setting-up-a-custom-domain-with-pages</a><br><a href="http://iiiyu.com/" target="_blank">http://iiiyu.com/</a></p>
-<p><a href="https://help.github.com/articles/markdown-basics" target="_blank">https://help.github.com/articles/markdown-basics</a><br><a href="https://help.github.com/articles/github-flavored-markdown" target="_blank">https://help.github.com/articles/github-flavored-markdown</a><br><a href="https://guides.github.com/features/mastering-markdown/" target="_blank">https://guides.github.com/features/mastering-markdown/</a><br><a href="https://help.github.com/articles/writing-on-github" target="_blank">https://help.github.com/articles/writing-on-github</a></p>
-<p>blog: how to set domain</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-  
-    <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-04-19T16:48:06.000Z"><a href="/2014-04-20-hello-world/">2014-04-20</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014-04-20-hello-world/">Hello World</a></h1>
+    <h1 class="title"><a href="/2014-04-20-hello-world.html">Hello World</a></h1>
   
 
     </header>
@@ -176,28 +96,13 @@ hexo server
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
     <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:iwill.im">
+    <input type="hidden" name="q" value="site:iwill.im/">
   </form>
 </div>
 
   
 
   
-<div class="widget tag">
-  <h3 class="title">Tags</h3>
-  <ul class="entry">
-  
-    <li><a href="/tags/blog/">blog</a><small>1</small></li>
-  
-    <li><a href="/tags/domain/">domain</a><small>1</small></li>
-  
-    <li><a href="/tags/github-pages/">github-pages</a><small>1</small></li>
-  
-    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
-  
-  </ul>
-</div>
-
 </aside>
     <div class="clearfix"></div>
   </div>
